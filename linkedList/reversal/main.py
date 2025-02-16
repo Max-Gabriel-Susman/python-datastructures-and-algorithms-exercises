@@ -25,4 +25,11 @@ class LinkedList:
     self.head_node = new_node
   
   def stringify_list(self):
-    pass
+    stringified = ""
+    if self.head_node != None:
+      node = self.head_node
+      stringified += str(node.get_value()) + "\n"
+      while node.get_next_node() != None:
+        node = node.get_next_node()
+        stringified += str(node.get_value()) + "\n"
+    return stringified
