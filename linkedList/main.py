@@ -33,5 +33,5 @@ class LinkedList:
       current_node = current_node.get_next_node()
     return string_list
   
-  def remove_node(self):
-    pass
+  def remove_node(self, value_to_remove):
+    current_node = self.get_head_node()
