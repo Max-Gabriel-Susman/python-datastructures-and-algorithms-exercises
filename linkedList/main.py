@@ -37,5 +37,9 @@ class LinkedList:
     current_node = self.get_head_node()
     if current_node.get_value() == value_to_remove:
       self.head_node = current_node.get_next_node()
-    else:
-      pass
+    else: 
+      while current_node.get_next_node() != None:
+        prev_node = current_node
+        current_node = current_node.get_next_node()
+        if current_node.get_value() == value_to_remove:
+          prev_node.set_next_node(current_node.get_next_node())
