@@ -26,6 +26,7 @@ class DoublyLinkedList:
     self.tail_node = None
 
   def add_to_head(self, new_value):
-    pass
+    new_head = Node(new_value)
+    current_head = self.head_node
     
 
