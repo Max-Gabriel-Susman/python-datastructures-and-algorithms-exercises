@@ -31,5 +31,7 @@ class DoublyLinkedList:
     if current_head != None:
       current_head.set_prev_node(new_head)
       new_head.set_next_node(current_head)
+    self.head_node = new_head
+    
     
 
