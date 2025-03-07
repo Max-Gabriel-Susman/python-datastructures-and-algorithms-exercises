@@ -38,6 +38,6 @@ class DoublyLinkedList:
     if self.tail_node == None:
       self.tail_node = new_head
 
-  def add_to_tail(self, new_value)
-    pass
-
+  def add_to_tail(self, new_value):
+    new_tail = Node(new_value)
+    current_tail = self.tail_node
