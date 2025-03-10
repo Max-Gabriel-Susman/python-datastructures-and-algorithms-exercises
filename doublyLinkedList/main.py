@@ -45,3 +45,5 @@ class DoublyLinkedList:
       current_tail.set_next_node(new_tail)
       new_tail.set_prev_node(current_tail)
     self.tail_node = new_tail
+    if self.head_node == None:
+      self.head_node = new_tail
