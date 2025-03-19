@@ -87,4 +87,7 @@ class DoublyLinkedList:
     node_to_remove = None
     current_node = self.head_node
     while current_node != None:
+      if current_node.get_value() == value_to_remove:
+        node_to_remove = current_node
+        break
       current_node = current_node.get_next_node()
