@@ -101,3 +101,6 @@ class DoublyLinkedList:
       self.remove_head()
     elif node_to_remove == self.tail_node:
       self.remove_tail()
+    else:
+      next_node = node_to_remove.get_next_node()
+      prev_node = node_to_remove.get_prev_node()
